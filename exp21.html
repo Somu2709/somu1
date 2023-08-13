@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+    <title>Show/Hide div</title>  
+    <script>  
+        function showhide() 
+        {  
+            var div = document.getElementById("newpost");  
+            if (div.style.display !== "none") {  
+                div.style.display = "none";  
+            }  
+            else {  
+                div.style.display = "block";  
+            }  
+        }  
+    </script>  
+</head>  
+<body>  
+    <div id="newpost">  
+        <p style="color: rgb(25, 63, 235);"> I am tring to give my best. <br />  
+            I hope you watching and give me my efforts marks. <br />  
+            Thank you soo much. </p>  
+    </div>  
+    <button id="button" onclick="showhide()">Show/Hide</button>  
+</body>  
+</html> 

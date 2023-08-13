@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <style>
+    body {
+      font: 400 16px/1.4 'serif';
+      }
+    #editor1 {
+      border: 3px inset grey;
+      height: 100px;
+      width: 381px;
+      margin: 10px auto 0;
+     }
+    fieldset {
+      margin: 2px auto 15px;
+      width: 358px;
+    }
+    button {
+      width: 5ex;
+      text-align: center;
+      padding: 1px 3px;
+    }
+  </style>
+  <script type="text/javascript">
+    function boldText(){
+        var target = document.getElementById("TextArea");
+        if( target.style.fontWeight == "bolder" ) {
+            target.style.fontWeight = "normal";
+        } else {
+            target.style.fontWeight = "bolder";
+        }
+    }
+    
+    
+    
+    function italicText(){
+        var target = document.getElementById("TextArea");
+        if( target.style.fontStyle == "italic" ) {
+            target.style.fontStyle = "normal";
+        } else {
+            target.style.fontStyle = "italic";
+        }
+    }
+    
+    function underlineText(){
+        var target = document.getElementById("TextArea");
+        if( target.style.textDecoration == "underline" ) {
+            target.style.textDecoration = "none";
+        } else {
+            target.style.textDecoration = "underline";
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+  <div id="editor1" contenteditable="true">
+     The quick brown fox jumped over the lazy dog.
+  </div>
+  <fieldset>
+    <button class="fontStyle" onclick="document.execCommand('italic',false,null);" title="Italicize Highlighted Text"><i>I</i>
+    </button>
+    <button class="fontStyle" onclick="document.execCommand( 'bold',false,null);" title="Bold Highlighted Text"><b>B</b>
+    </button>
+    <button class="fontStyle" onclick="document.execCommand( 'underline',false,null);"><u>U</u>
+    </button>
+  </fieldset>
+  </body>
+  </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exp20</title>
+  <link rel="stylesheet" href="exp20.css">
+  <script>function changeFontStyle(e)
+    {
+        const text = document.querySelector('.box');
+        if(e.target.id==="bold"){
+            e.target.classList.toggle('active');
+            text.classList.toggle('bold');
+        }
+        if(e.target.id==="italic"){
+            e.target.classList.toggle('active');
+            text.classList.toggle('italic');
+        }    
+        if(e.target.id==="underline"){
+            e.target.classList.toggle('active');
+            text.classList.toggle('underline');
+        }
+    }
+    
+    const btnAction = document.querySelector('.btn-action');
+    btnAction.addEventListener('click',changeFontStyle);</script>
+  </head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate neque et necessitatibus odit
+        voluptatum, officia, cupiditate illo incidunt nobis commodi, possimus aperiam aliquid quisquam dolor nisi
+        nostrum itaque impedit!</p>
+
+
+    </div>
+
+
+<div class="btn-action">
+<button id="bold">B</button>
+<button id="italic">I</button>
+<button id="underline">U</button>
+
+
+
+</div>
+
+
+  </div>
+</body>
+
+</html>

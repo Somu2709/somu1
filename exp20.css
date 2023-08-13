@@ -1,0 +1,31 @@
+button{
+cursor: pointer;
+padding: 10px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border:none;
+border: 1px solid teal;
+font-weight: bolder;
+}
+.active{
+
+background: #000;
+color: #fff;
+
+
+}
+
+
+
+
+
+.bold{
+  font-weight:bold;
+}
+.italic{
+  font-style :italic;
+}
+.underline{
+ text-decoration: underline;
+}

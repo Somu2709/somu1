@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Booking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Hotel Booking</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Book Your Stay</h2>
+      <form>
+        <label for="check-in-date">Check-In Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date">
+        <br>
+        <label for="check-out-date">Check-Out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date">
+        <br>
+        <label for="number-of-guests">Number of Guests:</label>
+        <input type="number" id="number-of-guests" name="number-of-guests" min="1" max="4">
+        <br>
+        <button type="submit">Check Availability</button>
+      </form>
+      <h3>Available Rooms</h3>
+      <ul>
+        <li>
+          <h4>Single Room</h4>
+          <img src="single-room.jpg" alt="Single Room">
+          <p>Price: $100 per night</p>
+          <button type="button">Book Now</button>
+        </li>
+        <li>
+          <h4>Double Room</h4>
+          <img src="double-room.jpg" alt="Double Room">
+          <p>Price: $150 per night</p>
+          <button type="button">Book Now</button>
+        </li>
+        <li>
+          <h4>Suite</h4>
+          <img src="suite.jpg" alt="Suite">
+          <p>Price: $200 per night</p>
+          <button type="button">Book Now</button>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>&copy; 2023 Hotel Booking</p>
+    </footer>
+  </body>
+</html>

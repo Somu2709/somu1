@@ -1,0 +1,22 @@
+body{
+
+background-color: azure;
+
+}
+p1{
+   font-size: 28px;
+    font-weight: bold;
+
+    color:green;
+}
+p2{
+font-style: italic;
+   font-size: 28px;
+   color: rgb(119, 0, 255);
+
+}
+p3{
+    font-size: 28px;
+     text-decoration-line: underline;
+     color: rgb(189, 107, 162);
+}
